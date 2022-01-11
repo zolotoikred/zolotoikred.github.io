@@ -1,0 +1,298 @@
+body{
+    font-family: "Geometria", sans-serif;
+}
+
+
+.offers_bg{
+    background-image: url(../../img/src/offer-10-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offers_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offers_title{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #575757;
+    margin-bottom: 40px;
+    padding-top: 50px;
+}
+
+.new_design_offer{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 32%;
+    margin-bottom: 20px;
+    color: #575757;
+    position: relative;
+    margin-right: 21px;
+}
+.new_design_offer:nth-child(3n){
+    margin-right: 0;
+}
+
+.new_design_offer .best_banner svg{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.new_design_offer .top_line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+}
+
+.new_design_offer .top_line .logo_wrapper{
+    text-align: center;
+    width: 100%;
+}
+
+.new_design_offer .top_line .logo_wrapper img{
+    max-width: 150px;
+}
+.new_design_offer .top_line .star_wrapper{
+    font-size: 14px;
+    line-height: 100%;
+    color: #575757;
+    position: relative;
+}
+
+.new_design_offer .top_line .star_wrapper:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-size: cover;
+    background-image: url(../../img/src/icons/new-star.svg);
+    vertical-align: -2px;
+}
+
+.new_design_offer .middle_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 86px;
+    padding: 10px 20px;
+    background: #ECF2F9;
+}
+.new_design_offer .middle_line .text_wrp p{
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 0;
+    color: #575757;
+}
+.new_design_offer .middle_line .text_wrp p:first-child{
+    margin-bottom: 4px;
+}
+
+.new_design_offer .middle_line .price{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 100%;
+    color: #575757;
+}
+
+.new_design_offer .get_credit{
+    background: #F2994A;
+    width: calc(100% - 40px);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.new_design_offer .price_text{
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.new_design_offer .price_text .price{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 100%;
+}
+
+.new_design_offer .text_wrp{
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.new_design_offer .text_wrp span{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+
+.best_banner {
+    position: relative;
+}
+
+.new_design_offer .best_banner > span{
+    z-index: 1;
+    position: absolute;
+    color: #fff;
+    transform: rotate(-45deg);
+    /*left: -10px;*/
+    /*top: 20px;*/
+    font-weight: bold;
+    /*font-size: 14px;*/
+    left: -20px;
+    top: 13px;
+    max-width: 112px;
+    line-height: 14px;
+    font-size: 12px;
+    max-height: 98px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+.best_banner[data-color="#36e232"] svg rect{
+    fill: #23a820!important;
+}
+
+
+.best_banner[data-color="#c431b9"] svg rect{
+    fill: #7b1c74!important;
+}
+
+.best_banner[data-color="#ff5a0b"] svg rect{
+    fill: #b83c01!important;
+}
+
+.best_banner[data-color="#408080"] svg rect{
+    fill: #276262!important;
+}
+
+.best_banner[data-color="#0000ff"] svg rect{
+    fill: #0000ac!important;
+}
+
+.new_design_offer .best_banner[data-color="#0000ff"] > span{
+    left: -20px;
+    top: 22px;
+}
+
+
+.new_design_offer .best_banner[data-color="#ff5a0b"] > span{
+    left: -15px;
+    top: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+    .offers_bg{
+        height: 73%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .new_design_offer{
+        width: 31%;
+    }
+    .new_design_offer .get_credit{
+        height: 38px;
+        font-size: 16px;
+    }
+    .new_design_offer .best_banner svg{
+        width: 89px;
+        height: 89px;
+    }
+    .new_design_offer .best_banner > span{
+        font-size: 8px;
+        line-height: 100%;
+        left: -27px;
+        top: 10px;
+    }
+    .new_design_offer .price_text{
+        font-size: 18px;
+        line-height: 100%;
+    }
+    .new_design_offer .price_text .price{
+        font-size: 18px;
+        line-height: 100%;
+    }
+    .new_design_offer .text_wrp,
+    .new_design_offer .text_wrp span{
+        font-size: 14px;
+    }
+    .new_design_offer .middle_line{
+        min-height: 72px;
+    }
+}
+@media (max-width: 767px){
+    .offers_bg{
+        background-size: contain;
+    }
+    .offers_title{
+        font-size: 16px;
+        line-height: 120%;
+        color: #575757;
+    }
+    .offers_list{
+        flex-direction: column;
+    }
+    .new_design_offer{
+        width: 100%;
+    }
+
+    .new_design_offer .get_credit{
+        height: 38px;
+        font-size: 16px;
+    }
+    .new_design_offer .top_line{
+        padding: 20px 38px 10px 38px;
+    }
+    .new_design_offer .middle_line{
+        padding: 10px 38px;
+        display: flex;
+        min-height: 48px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .new_design_offer .get_credit{
+        margin-left: 38px;
+        margin-right: 38px;
+        width: calc(100% - 76px);
+    }
+
+    .new_design_offer .price_text{
+        font-size: 18px;
+        line-height: 100%;
+        margin-bottom: 0;
+    }
+    .new_design_offer .price_text .price{
+        font-size: 18px;
+        line-height: 100%;
+    }
+    .new_design_offer .text_wrp,
+    .new_design_offer .text_wrp span{
+        font-size: 14px;
+    }
+
+}

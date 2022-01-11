@@ -1,0 +1,179 @@
+.footer {
+    background: #4f7a9e;
+    border-top-left-radius: 150px;
+    padding: 75px 0 0;
+    color: #f1f1f1;
+    position: relative;
+}
+
+.footer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/src/footer_3/mask.png) top center;
+    background-repeat: no-repeat;
+}
+
+.footer_content {
+    margin-top: 20px;
+    font-size: 12px;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.footer_text {
+    margin-top: 20px;
+}
+
+.footer_bottom {
+    z-index: 10;
+    position: relative;
+    height: 73px;
+}
+
+.footer_bottom_bg {
+    background: #1f506e;
+}
+
+.footer_bottom__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer_bottom__labels img {
+    margin-right: 20px;
+}
+
+.footer_bottom__copy {
+    font-size: 12px;
+    line-height: 19px;
+    text-align: right;
+}
+
+.footer_legend {
+    position: absolute;
+    top: 100%;
+    right: 100px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: gotham-bold, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1025px) {
+    .footer {
+        height: auto;
+    }
+
+    .footer:before {
+        background: url(../../img/src/footer_3/mask-tablet.png) center center;
+    }
+
+    .footer_wrapper {
+        padding: 0 40px;
+    }
+
+    .footer_bottom {
+        position: relative;
+        bottom: -73px;
+    }
+
+    .footer_content {
+        margin-bottom: 160px;
+    }
+
+    .footer_legend {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        bottom: -55%;
+        right: 250px;
+        top: auto;
+        min-width: 200px;
+    }
+
+    .footer_legend:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -125%;
+        background: url(../../img/src/footer_3/hand-tablet.png) center center;
+        background-repeat: no-repeat;
+        width: 212px;
+        height: 123px;
+    }
+}
+
+@media (max-width: 675px) {
+    .footer {
+        height: auto;
+        background-size: cover;
+    }
+
+    .footer:before {
+        background-position: left center;
+    }
+
+    .footer_logo {
+        padding: 0 20px;
+    }
+
+    .footer_legend {
+        bottom: -40%;
+        right: 160px;
+        text-align: left;
+    }
+
+    .footer_legend:before {
+        background: url(../../img/src/footer_3/hand-mobile.png);
+        background-repeat: no-repeat;
+        width: 150px;
+        height: 87px;
+        right: -80%;
+    }
+
+    .footer_bottom {
+        height: auto;
+    }
+
+    .footer_bottom__copy {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer_bottom__wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 25px 0;
+        height: auto;
+    }
+
+    .footer_bottom__labels img:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .footer_wrapper {
+        padding: 0 15px;
+    }
+}

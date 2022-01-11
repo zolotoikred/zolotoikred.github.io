@@ -1,0 +1,213 @@
+
+.footer {
+    background: #4F7A9E;
+    color: #f1f1f1;
+    padding-top: 50px
+}
+
+.footer_logo {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 50px
+}
+
+.footer_content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.footer_text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 70px 0 50px
+}
+
+.footer_text p:not(:last-child) {
+    margin-bottom: 20px
+}
+
+.footer_bottom {
+    height: 46px
+}
+
+.footer_bottom_bg {
+    background: #1F506E;
+}
+
+.footer_bottom__text {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    line-height: 46px;
+    font-size: 12px
+}
+
+.footer_labels__payments {
+    margin-top: 20px;
+    text-align: right
+}
+
+.footer_labels__payments img {
+    border-radius: 4px
+}
+
+.footer_labels__payments img:not(:last-child) {
+    margin-right: 10px
+}
+
+.footer_numbers {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%
+}
+
+.footer_numbers__top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.footer_numbers__top span {
+    width: 30px;
+    height: 46px;
+    display: block;
+    background: url(../../img/src/footer_2/icons/flip.png) center center, #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    color: #2a525b;
+    line-height: 46px;
+    text-align: center;
+    font-family: gotham-bold, sans-serif;
+    font-size: 22px;
+    position: relative;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    border-radius: 6px;
+}
+
+
+.footer_numbers__top span:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(../../img/src/footer_2/icons/holder.svg) center center;
+    width: 90%;
+    height: 6px
+}
+
+.footer_numbers__top span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(../../img/src/footer_2/icons/separator.svg) center center;
+    width: 100%;
+    height: 4px
+}
+
+.footer_numbers__bottom {
+    font-size: 14px;
+    line-height: 23px;
+    color: #fff;
+    margin-top: 10px
+}
+
+@media (max-width: 1025px) {
+    .footer_logo {
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        max-width: 50%
+    }
+
+    .footer_text {
+        -webkit-flex-basis: 65%;
+        -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+        max-width: 65%
+    }
+
+    .footer_labels {
+        -webkit-flex-basis: 35%;
+        -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+        max-width: 35%
+    }
+
+    .footer_labels__shield {
+        text-align: right
+    }
+    
+    .footer_labels__shield img {
+        max-width: 100%;
+    }
+
+    .footer_text {
+        padding: 0;
+        padding-right: 50px
+    }
+}
+
+@media (max-width: 675px) {
+    .footer_content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .footer_logo {
+        max-width: 100%;
+        flex-basis: auto;
+    }
+
+    .footer_numbers {
+        max-width: 100%;
+        flex-basis: auto;
+    }
+
+    .footer_text {
+        max-width: 100%;
+        margin-top: 40px;
+        font-size: 12px;
+        padding: 0;
+        flex-basis: auto;
+    }
+
+    .footer_labels {
+        margin-top: 50px;
+        max-width: 100%;
+        flex-basis: auto;
+    }
+
+    .footer_labels__payments, .footer_labels__shield {
+        text-align: left
+    }
+}

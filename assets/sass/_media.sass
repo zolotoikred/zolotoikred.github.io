@@ -1,0 +1,39 @@
+@import "vars"
+
+@media (max-width: 769px)
+    .tools
+        &_block
+            display: none
+        &_list
+            flex-direction: column
+        &_item
+            flex-basis: 100%
+            max-width: 100%
+            margin-bottom: 30px
+            display: flex 
+            flex-wrap: wrap
+            &:last-child
+                & .tools_item__desc
+                    max-width: 100%
+            &__desc
+                max-width: 377px
+            &__name
+                flex-basis: 100%
+                max-width: 100% 
+            &__actions
+                margin-left: auto
+            &__input
+                width: 240px
+        & .btn
+            margin-left: auto
+
+@media (max-width: 580px)
+    .tools
+        & .btn
+            margin-left: 0
+        &_item
+            &__actions
+                margin-left: 0
+                width: 100%
+            &__input
+                width: 100%

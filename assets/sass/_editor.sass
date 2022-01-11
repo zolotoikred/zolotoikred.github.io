@@ -1,0 +1,604 @@
+.wrapper_sm 
+    max-width: 1000px
+    margin: 0 auto
+    
+.editor
+    background: #fcfcfc
+    padding: 40px 0
+    &_colorpicker
+        position: absolute
+        top: -55px
+        left: 0
+        opacity: 0
+        cursor: pointer
+    &_header
+        background: #fff
+        padding: 20px 0
+        border-bottom: 1px solid #F3F3F3
+        overflow: hidden
+        &_form
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &_input
+            height: 40px
+            max-width: 170px
+            font-size: 14px
+        &_responsive
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 160px
+            &__icon
+                display: inline-block
+                // flex-basis: calc(33% - 10px)
+                // max-width: calc(33% - 10px)
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                transition: .3s ease-in-out
+                &:hover, &.active
+                    & svg path
+                        fill: #639A88
+        &_right
+            display: flex
+            justify-content: space-between
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                top: -50%
+                left: -20px
+                width: 1px
+                height: 200%
+                background: #f3f3f3
+        &_btn
+            min-width: 200px 
+            height: 40px
+            & i
+                opacity: 0
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 40px
+                transition: all .3s ease-in-out
+            &.saved
+                & i
+                    opacity: 1
+        &_actions
+            display: flex
+            align-items: center
+            margin-left: 45px
+            & span
+                width: 40px
+                height: 40px
+                cursor: pointer
+                &:not(:last-child())
+                    margin-right: 25px
+                &:hover
+                    & svg
+                        & circle
+                            fill: #639A88
+                        & path
+                            fill: #fff
+                &:last-child
+                    &:hover
+                        & svg
+                            & circle
+                                fill: #EBEBEB
+                            & path
+                                fill: #EB5757
+    &_settings
+        background: #fcfcfc
+        padding: 20px 0  
+        &_top
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+        &_left
+            position: relative
+            & label
+                display: block
+                font-family: gotham-medium, sans-serif
+                font-size: 12px
+                color: #333
+                line-height: 11px
+            &__input
+                width: 555px
+                height: 50px
+                padding-right: 80px
+            &__btn
+                position: absolute
+                right: 0
+                bottom: 0
+                height: 50px !important
+                line-height: 50px !important
+                border-radius: 0 !important
+                width: 65px !important
+                border-top-right-radius: 5px !important
+                border-bottom-right-radius: 5px !important
+        &_right
+            &__link
+                font-family: gotham-medium, sans-serif
+                font-size: 14px
+                line-height: 13px
+                text-align: right
+                text-decoration-line: underline
+                color: #333
+                line-height: 50px
+        &_colors
+            margin-top: 40px
+            list-style: none
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &__item
+                box-shadow: 0px 10px 45px rgba(68, 68, 68, 0.1)
+                border-radius: 100px
+                &.active
+                    border: 1px solid #78BE20
+                &__title
+                    font-size: 14px
+                    color: #333
+    &_block
+        box-shadow: 0px 10px 45px rgba(68, 68, 68, 0.1)
+        overflow: hidden
+        margin-bottom: 40px
+        &_content
+            text-align: left
+    &_panel
+        background: #5A5D62
+        height: 56px
+        padding: 0 40px
+        display: flex
+        &_title
+            font-family: gotham-regular, sans-serif
+            font-size: 12px
+            color: #fff
+            line-height: 56px
+            width: 120px
+            padding: 0 10px
+        &_numbers, &_tools
+            display: flex
+            list-style: none
+            font-size: 14px
+            color: #aeaeae
+            line-height: 56px
+            align-items: center
+            &__item
+                width: 75px
+                text-align: center
+                cursor: pointer
+                font-family: gotham-medium, sans-serif
+                height: 56px
+                position: relative
+                & .gearIcon 
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                &.tuning
+                    margin-left: auto
+                    width: auto
+                    color: #fff
+                    font-family: gotham-regular, sans-serif
+                    font-size: 12px
+                    position: relative
+                    cursor: pointer
+                    & i.gear
+                        top: 7px
+                        margin-left: 3px
+                &.title
+                    pointer-events: none
+                    padding: 0 10px
+                    font-size: 12px
+                    width: auto
+                    color: #fff
+                    font-family: gotham-regular, sans-serif
+                &.active
+                    background: #494B50
+                    color: #fff
+                    position: relative
+                    &:before
+                        content: ''
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 100%
+                        height: 2px
+                        background: #78BE20
+        &_tools
+            width: 100%
+            justify-content: space-between
+            list-style: none
+            &__item
+                &:last-child()
+                    font-family: gotham-regular, sans-serif
+                    font-size: 12px
+                    color: #fff
+                    flex-basis: 150px
+                    & i.gear
+                        top: 7px
+                        margin-left: 3px
+                &:first-child()
+                    flex-basis: 150px
+                &:nth-child(2)
+                    flex-basis: 225px
+                &:nth-child(3)
+                    flex-basis: 215px
+                & ul
+                    display: flex
+                    list-style: none
+                    & li
+                        height: 56px
+                &__sort
+                    font-family: gotham-regular, sans-serif
+                    font-size: 12px
+                    color: #fff
+                    & li
+                        padding: 0 10px
+                        &.select
+                            min-width: 85px
+                            background: #494B50
+                        &:first-child()
+                            min-width: 125px
+                            pointer-events: none
+                &__view
+                    & li
+                        position: relative
+                        min-width: 75px
+                        &.active
+                            position: relative
+                            background: #494B50
+                            &:before
+                                content: ''
+                                position: absolute
+                                bottom: 0
+                                left: 0
+                                width: 100%
+                                height: 2px
+                                background: #78be20
+                            & svg
+                                & rect
+                                    stroke: white
+                                & path
+                                    stroke: white
+                        & svg
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                            position: absolute
+                &__numbers
+                    & li
+                        min-width: 75px
+        &_position
+            display: flex
+            margin-left: auto
+            list-style: none
+            align-items: center
+            &__item
+                line-height: 56px
+                height: 100%
+                position: relative
+                &.active
+                    background: #494B50
+                    position: relative
+                    &:before
+                        content: ''
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 100%
+                        height: 2px
+                        background: #78BE20
+                    & svg
+                        & line
+                            stroke: white
+                & svg
+                    position: absolute
+                    top: 50% 
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    pointer-events: none
+                &:first-child()
+                    min-width: auto
+                    color: #fff
+                    font-family: gotham-regular, sans-serif
+                    font-size: 12px
+                    padding: 0 10px
+                &:not(:first-child())
+                    min-width: 75px
+
+
+.headers
+	height: 630px
+	&_wrapper
+		max-width: 800px
+		margin: 0 auto
+		padding: 0 15px
+
+.headers_item
+    display: none
+    height: 100%
+    &.active
+        display: block
+
+.logos
+	padding: 25px 100px
+	text-align: left
+	&_item
+		display: none
+		&.active
+			display: block
+
+.logos_item_wrapper
+    display: flex
+    max-width: 485px
+    &_left
+        margin-right: 15px
+    & span
+        display: block
+        &:nth-child(1)
+            color: #494949
+            font-family: gotham-bold, sans-serif
+            font-size: 22px
+            line-height: 30px
+        &:nth-child(2)
+            color: #A2A2A2
+            text-transform: uppercase
+            font-size: 12px
+
+.offers
+    &_horizontal
+        height: 960px
+        &__item
+            height: 100%
+            display: none
+            &.active
+                display: block
+    &_vertical
+        height: 710px
+        &__item
+            height: 100%
+            display: none
+            &.active
+                display: block
+    &_wrapper
+        max-width: 800px
+        margin: 0 auto
+        padding: 0 15px
+
+.views_item    
+    & section
+        display: none
+        &.active
+            display: block
+
+.views
+    &_item
+        display: none
+        &.active
+            display: block
+
+.widget
+    &_item
+        display: none
+        height: 600px
+        &.active
+            display: block
+    &_left_top
+        bottom: auto !important
+        left: 20px !important
+        top: 20px !important
+        right: auto !important
+        transform: none
+    &_left_center 
+        bottom: auto !important
+        left: 20px !important
+        top: 50% !important
+        right: auto !important
+        transform: translateY(-50%)
+    &_left_bottom
+        bottom: 20px !important
+        left: 20px !important
+        top: auto !important
+        right: auto !important
+        transform: none
+    &_right_top
+        bottom: auto !important
+        right: 20px !important
+        left: auto !important
+        top: 20px !important
+        transform: none
+    &_right_center
+        bottom: auto !important
+        left: auto !important
+        right: 20px !important
+        top: 50% !important
+        transform: translateY(-50%)
+    &_right_bottom
+        bottom: 20px !important
+        right: 20px !important
+        top: auto !important
+        left: auto !important
+        transform: none
+
+.faq
+    &_wrapper
+        max-width: 800px
+        margin: 0 auto
+        padding: 0 15px
+.faqs
+    height: 720px
+    &_item
+        display: none
+        height: 100%
+        &.active
+            display: block
+
+.footer
+    &_preview
+        position: absolute
+        width: 100%
+        bottom: 0
+    &_wrapper
+        max-width: 800px
+        margin: 0 auto
+        padding: 0 15px
+        position: relative
+    &_item
+        display: none
+        height: 100%
+        &.active
+            display: block
+
+.domain
+    &_desc
+        font-size: 16px
+        margin-bottom: 15px
+        color: #333
+    &_input
+        height: 40px
+        font-size: 14px
+        color: #a2a2a2
+        width: 100%
+        margin-bottom: 50px
+    &_list
+        line-height: 26px
+        font-size: 16px
+        color: #333
+        list-style: none
+        margin-bottom: 45px
+        &__title
+            margin-bottom: 10px
+        &__item
+            margin-bottom: 5px
+            color: #5A5D62
+    &_link
+        color: #639A88
+        text-decoration: underline
+        &:hover
+            color: #639A88
+            text-decoration: none
+
+.footers
+    height: 520px
+            
+.desktop-visible
+    display: block
+
+.mobile-visible
+    display: none
+
+@media (max-width: 580px)
+    .desktop-visible
+        display: none
+    .mobile-visible
+        display: block
+
+.gear
+    display: inline-block
+    position: relative
+    background: url('../img/src/icons/gear.svg') center center
+    width: 22px
+    height: 22px
+
+.arrow_down
+    display: inline-block
+    position: relative
+    background: url('../img/src/icons/expand.svg') center center
+    width: 10px
+    height: 5px
+    margin-left: 3px
+    top: -2px
+
+
+// colorPicker
+.cpBG
+    left: -100px !important
+    position: relative
+    padding-top: 35px !important
+
+.cp-values>:not(:first-child, :nth-child(2))
+    display: none
+
+.cp-values .cp-prev
+    text-align: left !important
+
+.cp-values .cp-prev i
+    width: 70px !important
+    height: 22px !important
+
+.cp-values input
+    height: 25px
+    padding: 0 5px
+    text-align: center
+    line-height: 25px
+
+.cp-values .cp-hex input
+    width: 80px !important
+
+.cp-buttons
+    display: none
+
+.colorpicker
+    &_bottom
+        display: flex
+        flex-wrap: wrap
+        margin-top: 15px
+        &_item
+            &.colorpicker_size
+                flex-basis: 50%
+                max-width: 50%
+                text-align: left
+                padding-right: 10px
+            & label
+                line-height: 0
+                color: #A1A1A1
+                margin-bottom: 0
+                display: block
+                font-size: 10px
+            & input
+                width: 100%
+                height: 35px
+                line-height: 35px
+            &.colorpicker_radius
+                flex-basis: 50%
+                max-width: 50%
+                text-align: left
+                padding-left: 10px
+            &.colorpicker_value
+                flex-basis: 100%
+                max-width: 100%
+                text-align: left
+                margin-top: 10px
+            &.colorpicker_sample
+                flex-basis: 100%
+                max-width: 100%
+                margin-bottom: 25px
+                & button
+                    pointer-events: none
+    &_save
+        display: block
+        width: 100%
+        position: absolute
+        bottom: -1px
+        left: -1px
+        background: #639A88
+        width: 280px
+        height: 30px
+        line-height: 30px
+        color: #fff
+        font-size: 12px
+        &:hover
+            color: #fff
+    &_close
+        width: 10px
+        height: 10px
+        position: absolute
+        top: 13px
+        right: 19px
+        color: #A1A1A1
+        & i
+            position: absolute

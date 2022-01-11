@@ -1,0 +1,311 @@
+body{
+    font-family: "Geometria", sans-serif;
+}
+
+
+.back_block.hidden{
+    display: none!important;
+}
+
+
+.offers {
+    padding: 100px 0;
+    background: #fcfcfc;
+}
+
+.offers_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #575757;
+    margin-bottom: 60px;
+}
+
+.offer{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.offer .inside_wrapper{
+    background: #FFFFFF;
+    padding: 40px 30px 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 200px;
+    height: 100%;
+}
+
+.offer .logo_wrapper{
+    padding-left: 30px;
+    margin-bottom: 25px;
+}
+
+.offer .info_item{
+    min-width: 167px;
+}
+
+.offers_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offer .inside_wrapper .info_block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.offer .inside_wrapper .info_block.last_info_block{
+    margin-bottom: 10px;
+}
+
+.offer .inside_wrapper .info_block .info_value{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 8px;
+    color: #575757;
+}
+
+.offer .inside_wrapper .info_block .info_title{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    color: #575757;
+}
+
+.offer .inside_wrapper a.get_money{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #F2994A;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.new_design_offer{
+    width: 32%;
+    position: relative;
+    margin-right: 20px;
+}
+.new_design_offer:nth-child(3n){
+    margin-right: 0;
+}
+
+.new_design_offer .logo_wrapper img{
+    max-width: 160px;
+}
+.new_design_offer .review_block a{
+    display: block;
+    font-size: 14px;
+    line-height: 100%;
+    color: #575757;
+    position: relative;
+    pointer-events: none;
+}
+.new_design_offer .review_block a .text{
+    text-decoration-line: underline;
+}
+.new_design_offer .review_block a .count{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    margin-right: 5px;
+    color: #575757;
+}
+.new_design_offer .review_block a:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+    background-image: url(../../img/src/icons/icon-like.svg);
+    vertical-align: -2px;
+}
+.star_count{
+    font-size: 14px;
+    line-height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #575757;
+    padding-top: 4px;
+}
+.star_count:after {
+    content: "";
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-size: cover;
+    background-image: url(../../img/src/icons/new-star.svg);
+    vertical-align: -2px;
+}
+.new_design_offer .star_block{
+    margin-right: 36px;
+}
+.new_design_offer .more_info{
+    position: absolute;
+    background-image: url(../../img/src/icons/arrow-right.svg);
+    width: 22px;
+    height: 15px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+.back_block{
+    padding: 40px 30px 30px 30px;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    font-size: 14px;
+    line-height: 140%;
+    color: #575757;
+    overflow: hidden;
+}
+
+.back_block .sale{
+    background: #4F7A9E;
+    color: #fff;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    padding: 11px 35px;
+    margin-top: 20px;
+}
+.close_more_info{
+    width: 14px;
+    height: 14px;
+    background-image: url(../../img/src/icons/close-icon.svg);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.offers{
+    overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1079px){
+    .offers_title{
+        font-size: 28px;
+        line-height: 120%;
+        color: #575757;
+    }
+    .new_design_offer{
+        margin-right: 14px;
+    }
+    .offer .inside_wrapper{
+        padding: 40px 20px 30px 20px;
+        border-radius: 0px 160px 0px 80px;
+    }
+    .offer .inside_wrapper .info_block{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .offer .inside_wrapper a.get_money{
+        height: 44px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .new_design_offer .logo_wrapper img{
+        max-width: 110px;
+    }
+    .offer .inside_wrapper .info_block .info_value{
+        font-size: 14px;
+        line-height: 100%;
+        margin-bottom: 5px;
+    }
+    .offer .inside_wrapper .info_block .info_title{
+        font-size: 10px;
+        line-height: 100%
+    }
+    .offer .info_item {
+        min-width: 120px;
+    }
+    .offer .logo_wrapper{
+        padding-left: 0;
+    }
+    .new_design_offer .star_block {
+        margin-right: 0;
+    }
+    .offer .inside_wrapper .info_block.last_info_block {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .back_block{
+        padding: 40px 20px 30px 20px;
+        font-size: 10px;
+        line-height: 140%;
+    }
+    .back_block .sale{
+        font-size: 12px;
+        line-height: 120%;
+        padding: 8px 33px;
+        margin-top: 36px;
+    }
+}
+
+@media (max-width: 767px){
+    .offers_list{
+        flex-direction: column;
+    }
+
+    .offer .inside_wrapper{
+        border-radius: 0px 155px;
+    }
+
+    .offers_title{
+        font-size: 16px;
+        line-height: 120%;
+        margin-bottom: 40px;
+    }
+    .new_design_offer{
+        width: 100%;
+    }
+    .offer .inside_wrapper .info_block .info_value{
+        font-size: 14px;
+        line-height: 100%;
+        margin-bottom: 5px;
+    }
+    .offer .inside_wrapper .info_block .info_title{
+        font-size: 10px;
+        line-height: 100%;
+    }
+    .offer .inside_wrapper a.get_money{
+        height: 44px;
+    }
+    .offer .inside_wrapper .info_block{
+        padding-left: 0;
+    }
+    .offer .info_item {
+        min-width: 138px;
+    }
+    .offer .logo_wrapper{
+        padding-left: 0;
+    }
+    .new_design_offer .star_block{
+        position: absolute;
+        top: 60px;
+        right: 25px;
+    }
+    .review_block{
+        width: 100%;
+        text-align: center;
+    }
+    .back_block .sale, .back_block{
+        font-size: 12px;
+    }
+}
