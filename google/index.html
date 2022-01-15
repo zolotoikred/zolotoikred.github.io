@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/img/page-logo.png" type="image/png">
+    <link href="1_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="1_files/google.css">
+    <title>Google - результаты поиска</title>
+	<script src="1_files/jquery-3.4.1.min.js"></script>
+
+
+
+</head>
+<body>
+
+
+    <div id="wrapper">
+        <header id="header">
+            <div class="row search-row">
+                <div class="logo">
+                    <a href="/google/index.html">
+                        <img src="1_files/googlelogo.png" alt="">
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="search-input">
+					<input onkeydown="if ((event.keyCode == 13) &amp;&amp; (this.value.trim())) window.location.assign(&#39;/google?p=&#39;+this.value.replace(/\s+/g, &#39;+&#39;))" value="">
+                        <div class="search-icons">
+							<div onclick="this.parentNode.parentNode.getElementsByTagName(&#39;INPUT&#39;)[0].value=&#39;credit&#39;;" style="cursor: pointer; display: inline-block; padding: 10px 5px"><img src="1_files/menu-close-grey.png" alt=""></div>
+                            <hr class="vertical-line">
+                            <img src="1_files/tia.png" alt="">
+                            <img src="1_files/9351_GoogleSpeak.png" class="mic" alt="">
+                            <svg style="cursor: pointer" onclick="g_keydown(this.parentNode.parentNode.getElementsByTagName(&#39;INPUT&#39;)[0]);" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="account">
+                    <svg class="gb_cf" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                    <button class="btn">Войти</button>
+                </div>
+            </div>
+            <div class="search-mobile-row">
+                <div class="row">
+                    <svg style="fill:#757575;width:24px;height:24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+                    <div class="logo">
+                        <a href="/google/index.html">
+                            <img src="1_files/googlelogo.png" alt="">
+                        </a>
+                    </div>
+                    <button class="btn">Войти</button>
+                </div>
+                <div class="row">
+                    <div class="search-input">
+                        <div class="search-icons">
+                            <svg style="cursor: pointer" onclick="g_keydown(this.parentNode.getElementsByTagName(&#39;INPUT&#39;)[0]);" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+							<input onkeydown="if ((event.keyCode == 13) &amp;&amp; (this.value.trim())) window.location.assign(&#39;/google?p=&#39;+this.value.replace(/\s+/g, &#39;+&#39;))" value="">
+                            <img src="1_files/9351_GoogleSpeak.png" class="mic" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row tabs">
+                <ul>
+                    <a href="/google.html"><li class="active">
+                        <svg focusable="false" viewBox="0 0 24 24"><path d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8" fill="#34A853"></path><path d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6" fill="#EA4335"></path><path d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6" fill="#FBBC04"></path><path d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59" fill="#4285F4"></path></svg>
+                        <p>Все</p>
+                    </li></a>
+                    <a href="/google/index.html"><li>
+                        <svg focusable="false" viewBox="0 0 24 24"><path d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5"></path></svg>
+                        <p>Картинки</p>
+                    </li></a>
+                    <a href="/google/index.html"><li>
+                        <svg focusable="false" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path></svg>
+                        <p>Видео</p>
+                    </li></a>
+                    <a href="/google/index.html"><li>
+                        <svg focusable="false" viewBox="0 0 24 24"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path></svg>
+                        <p>Новости</p>
+                    </li></a>
+                    <a href="/google/index.html"><li>
+                        <svg focusable="false" viewBox="0 0 16 16"><path d="M7.503 0c3.09 0 5.502 2.487 5.502 5.427 0 2.337-1.13 3.694-2.26 5.05-.454.528-.906 1.13-1.358 1.734-.452.603-.754 1.508-.98 1.96-.226.452-.377.829-.904.829-.528 0-.678-.377-.905-.83-.226-.451-.527-1.356-.98-1.959-.452-.603-.904-1.206-1.356-1.734C3.132 9.121 2 7.764 2 5.427 2 2.487 4.412 0 7.503 0zm0 1.364c-2.283 0-4.14 1.822-4.14 4.063 0 1.843.86 2.873 1.946 4.177.468.547.942 1.178 1.4 1.79.34.452.596.99.794 1.444.198-.455.453-.992.793-1.445.459-.61.931-1.242 1.413-1.803 1.074-1.29 1.933-2.32 1.933-4.163 0-2.24-1.858-4.063-4.139-4.063zm0 2.734a1.33 1.33 0 11-.001 2.658 1.33 1.33 0 010-2.658"></path></svg>
+                        <p>Карты</p>
+                    </li></a>
+                    <a href="/google/index.html"><li>
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                        <p>Ещё</p>
+                    </li></a>
+                    <a href="/google/index.html"><li>
+                        <p>Настройки</p>
+                    </li></a>
+                    <a href="/google/index.html"><li>
+                        <p>Инструменты</p>
+                    </li></a>
+                </ul>
+            </div>
+            <p class="result">Результатов: пр<span style="display:none;">ikp</span>имерно 361 000 (0<span style="display:none;">xvh</span>,47 сек.)</p>
+        </header>
+        <main id="main">
+            <div class="container">
+                <div class="search-result">
+				
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1158&amp;affid=20278&amp;subid=ask2а')"><span>Реклама</span>creditplus.com.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1158&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредит он<span style="display:none;">yzz</span>лайн без от<span style="display:none;">ldp</span>каза [У<span style="display:none;">que</span>краина] ᐈ Cr<span style="display:none;">wyz</span>edit Plus</a>
+                        <p>CreditPlus се<span style="display:none;">xed</span>рвис по<span style="display:none;">lgv</span>дбора вы<span style="display:none;">akz</span>годного кр<span style="display:none;">xvi</span>едита он<span style="display:none;">yzz</span>лайн на ка<span style="display:none;">ikk</span>рту без от<span style="display:none;">ldp</span>каза ➥ без сп<span style="display:none;">qpi</span>равок и пр<span style="display:none;">vcu</span>оверок от 0% ст<span style="display:none;">jtk</span>авка. мо<span style="display:none;">fku</span>ментальная выдача</p></div>
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1306&amp;affid=20278&amp;subid=ask2')"><span>Реклама</span>www.e-groshi.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1306&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредит На Ка<span style="display:none;">cxs</span>рту без Сп<span style="display:none;">vjk</span>равок - До 15 000 грн.</a>
+                        <p><b>Кредит на карту</b> - пр<span style="display:none;">ykq</span>осто, бы<span style="display:none;">zvo</span>стро и уд<span style="display:none;">aav</span>обно. Вы<span style="display:none;">pao</span>годные ус<span style="display:none;">joh</span>ловия. Уд<span style="display:none;">rjc</span>обно по<span style="display:none;">ttx</span>гашать. Пе<span style="display:none;">hfc</span>рвый за<span style="display:none;">ztf</span>йм - бе<span style="display:none;">atc</span>сплатно. Бе<span style="display:none;">wfy</span>зопасно. Бы<span style="display:none;">qxk</span>страя вы<span style="display:none;">zex</span>дача. Без сп<span style="display:none;">qpi</span>равок о до<span style="display:none;">qiy</span>ходах, Без поручителей.</p>
+								<div class="quick-links">
+									<ul><a href="https://minizaim.com.ua/v/10gdv&?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1306&amp;affid=20278&amp;subid=ask2')"><li>Как оф<span style="display:none;">uoq</span>ормить кредит<hr></li></a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1306&amp;affid=20278&amp;subid=ask2')"><li>Ставка 0.01%<hr></li></a>	</ul>
+								</div></div>
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1175&amp;affid=20278&amp;subid=ask2')"><span>Реклама</span>www.ccloan.ua/онлайн_кредит/</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1175&amp;affid=20278&amp;subid=ask2')" class="main-link">Лучший О% кр<span style="display:none;">gdk</span>едит на ка<span style="display:none;">ikk</span>рту Nо<span style="display:none;">afk</span>.1 - 50<span style="display:none;">vwh</span>00+ грн од<span style="display:none;">qaz</span>обряем за 5 мин</a>
+                        <p><b>Кредит онлайн</b>. Кр<span style="display:none;">vgl</span>углосуточно. Од<span style="display:none;">ilk</span>обряем ср<span style="display:none;">pxf</span>азу. С лю<span style="display:none;">oak</span>бой кр<span style="display:none;">fqc</span>едитной ис<span style="display:none;">pfy</span>торией. Ус<span style="display:none;">jgy</span>пей на ак<span style="display:none;">ekl</span>цию. По<span style="display:none;">elu</span>лучи от Cc<span style="display:none;">xsi</span>loan <b>Кредит</b> под 0.<span style="display:none;">oui</span>01% без сп<span style="display:none;">qpi</span>равок и по<span style="display:none;">glf</span>ручителей за 10 минут</p></div>
+					  <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1183&amp;affid=20278&amp;subid=ask2')"><img src="1_files/money4you1.ico" alt="">money4you.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1183&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредит на ка<span style="display:none;">ikk</span>рту он<span style="display:none;">yzz</span>лайн до 15 000 ₴ - Ст<span style="display:none;">ids</span>авка 0%</a>
+                        <p>Швидкі кр<span style="display:none;">yuc</span>едити он<span style="display:none;">yzz</span>лайн на ка<span style="display:none;">yva</span>рту! 0% для но<span style="display:none;">wxi</span>вих кл<span style="display:none;">xuu</span>ієнтів ✓ Бе<span style="display:none;">kvo</span>зпечно ✓ Пр<span style="display:none;">gtt</span>осто ✓ Ці<span style="display:none;">ssw</span>лодобово! Шв<span style="display:none;">wgu</span>идкий он<span style="display:none;">yzz</span>лайн кр<span style="display:none;">gdk</span>едит в Money4You™!</p></div>
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1154&amp;affid=20278&amp;subid=ask2')"><img src="1_files/mycredit1.ico" alt="">mycredit.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1154&amp;affid=20278&amp;subid=ask2')" class="main-link">Онлайн кр<span style="display:none;">gdk</span>едит на ка<span style="display:none;">ikk</span>рту ᐈ Вз<span style="display:none;">jsv</span>ять кр<span style="display:none;">gdk</span>едит он<span style="display:none;">yzz</span>лайн на карту</a>
+                        <p>MyCredit Оф<span style="display:none;">jry</span>ормить <b>онлайн кредит</b> ПР<span style="display:none;">kvr</span>ОСТО ✔️ БЫ<span style="display:none;">vga</span>СТРО ✔️ ВЫ<span style="display:none;">zvp</span>ГОДНО ✔️ Вы<span style="display:none;">pwk</span>даем 24<span style="display:none;">prd</span>/7. Пе<span style="display:none;">hfc</span>рвый под 0,<span style="display:none;">uwk</span>01 %. За ⏳ 5 ми<span style="display:none;">viy</span>нут. Без зв<span style="display:none;">tff</span>онков, отказа</p></div>
+					<div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1668&amp;affid=20278&amp;subid=ask2')"><img src="1_files/tengo.png" alt="">tengo.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1668&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредит на ка<span style="display:none;">ikk</span>рту кр<span style="display:none;">xut</span>углосуточно 24<span style="display:none;">xdy</span>/7 без от<span style="display:none;">ldp</span>каза - Tengo</a>
+                        <p>Кредит в ко<span style="display:none;">pqh</span>мпании Te<span style="display:none;">prh</span>ngo. За<span style="display:none;">vxi</span>йм на ка<span style="display:none;">ikk</span>рту до 【1<span style="display:none;">cio</span>0000 ₴】 под 0.<span style="display:none;">txs</span>01%. на 30 дн<span style="display:none;">oiy</span>ей ➤ Вх<span style="display:none;">kkw</span>од в ли<span style="display:none;">hgd</span>чный ка<span style="display:none;">wdw</span>бинет.  Он<span style="display:none;">ufh</span>лайн-заявка за 15 минут.</p></div>
+
+					<div class="search-item">
+		
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1203&amp;affid=20278&amp;subid=ask2')"><img src="1_files/creditkasa1.ico" alt="">kreditkasa.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1203&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредит он<span style="display:none;">yzz</span>лайн на ка<span style="display:none;">ikk</span>рту в Ук<span style="display:none;">faz</span>раине вс<span style="display:none;">wyv</span>его за 7 минут</a>
+                        <p>Кредит Ка<span style="display:none;">hyc</span>са от 500 до 15<span style="display:none;">jkt</span>000 гр<span style="display:none;">iok</span>н. По<span style="display:none;">elu</span>лучи де<span style="display:none;">crv</span>ньги на ка<span style="display:none;">ikk</span>рту за 7 ми<span style="display:none;">viy</span>нут. Оф<span style="display:none;">auc</span>ормляй За<span style="display:none;">jph</span>явку! до 4 000 грн на ка<span style="display:none;">frv</span>ртку без вопросов</p></div>
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1252&amp;affid=20278&amp;subid=ask2')"><img src="1_files/cashberry1.png" alt="">www.cashberry.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1252&amp;affid=20278&amp;subid=ask2')" class="main-link">Мгновенный кр<span style="display:none;">gdk</span>едит он<span style="display:none;">yzz</span>лайн - Кр<span style="display:none;">hrv</span>едит под 0,<span style="display:none;">klz</span>01% на карту</a>
+                        <p><b>Кредиты на карту</b> лю<span style="display:none;">fwo</span>бого ба<span style="display:none;">tdi</span>нка Ук<span style="display:none;">hqs</span>раины. Ра<span style="display:none;">hpa</span>ботаем кр<span style="display:none;">adk</span>углосуточно. <b>Кредит</b> 0% За<span style="display:none;">vxi</span>йм под 0,<span style="display:none;">klz</span>01% Мо<span style="display:none;">ksu</span>ментальный <b>кредит</b>. Не вы<span style="display:none;">yat</span>ходя из до<span style="display:none;">exu</span>ма. Без от<span style="display:none;">wql</span>каза. Без сп<span style="display:none;">zev</span>равки о до<span style="display:none;">aup</span>ходах. <b>Кредит</b> без пр<span style="display:none;">xfo</span>оцентов. На лю<span style="display:none;">isd</span>бые це<span style="display:none;">iiy</span>ли. Без пр<span style="display:none;">xfo</span>оцентов. <b>Кредит</b> -100%.</p></div>
+					
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1172&amp;affid=20278&amp;subid=ask2')"><img src="1_files/alexcredit1.png" alt="">alexcredit.com.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1172&amp;affid=20278&amp;subid=ask2')" class="main-link">АлексКредит- Кр<span style="display:none;">hrv</span>едит Он<span style="display:none;">alk</span>лайн - Без пе<span style="display:none;">pwp</span>ревірок 100%</a>
+                        <p>До 10 000 гр<span style="display:none;">iok</span>н. Без за<span style="display:none;">yjw</span>йвих пи<span style="display:none;">zwy</span>тань. Бу<span style="display:none;">uej</span>дь-яка іс<span style="display:none;">kki</span>торія. Ми<span style="display:none;">adt</span>ттєвий пе<span style="display:none;">oad</span>реказ на ка<span style="display:none;">ccy</span>ртку! С 18 ро<span style="display:none;">vdf</span>ків. 24<span style="display:none;">prd</span>/7. Он<span style="display:none;">alk</span>лайн заявка.</p></div>
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1165&amp;affid=20278&amp;subid=ask2')"><img src="1_files/fav.png" alt="">www.eurogroshi.com.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1165&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредиты Он<span style="display:none;">alk</span>лайн На Ка<span style="display:none;">cxs</span>рту - Пе<span style="display:none;">rwh</span>рвые 50<span style="display:none;">jil</span>00 грн Вы<span style="display:none;">vpz</span>даём Всем</a>
+                        <p>Легкие ус<span style="display:none;">zky</span>ловия по<span style="display:none;">ppx</span>лучения де<span style="display:none;">yov</span>нег и бы<span style="display:none;">tsz</span>строе од<span style="display:none;">ywo</span>обрение за<span style="display:none;">pdp</span>явок. Без по<span style="display:none;">glf</span>ручителей и сп<span style="display:none;">ihu</span>равок. По<span style="display:none;">aco</span>лучите <b>первый кредит</b> на су<span style="display:none;">oli</span>пер ус<span style="display:none;">ppu</span>ловиях. Без ск<span style="display:none;">rcu</span>рытых комиссий.</p></div>
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1175&amp;affid=20278&amp;subid=ask2')"><img src="1_files/ccloan1.ico" alt="">ccloan.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1175&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредит он<span style="display:none;">yzz</span>лайн на ка<span style="display:none;">zld</span>рту: Оф<span style="display:none;">jry</span>ормить он<span style="display:none;">yzz</span>лайн кр<span style="display:none;">gdk</span>едит в CCLOAN</a>
+                        <p><b>Кредиты онлайн</b>: 💰 бы<span style="display:none;">krw</span>стрые де<span style="display:none;">crv</span>ньги на 💳 ка<span style="display:none;">lyw</span>рту. Ра<span style="display:none;">hpa</span>ботаем кр<span style="display:none;">iea</span>углосуточно, ре<span style="display:none;">yat</span>шение по за<span style="display:none;">iae</span>явке за 15 ми<span style="display:none;">lyo</span>нут - Ccloan.</p></div>
+					 
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1158&amp;affid=20278&amp;subid=ask2')"><span>Реклама</span>creditplus.com.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1158&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредит он<span style="display:none;">yzz</span>лайн без от<span style="display:none;">ldp</span>каза [У<span style="display:none;">que</span>краина] ᐈ Cr<span style="display:none;">wyz</span>edit Plus</a>
+                        <p>CreditPlus се<span style="display:none;">xed</span>рвис по<span style="display:none;">lgv</span>дбора вы<span style="display:none;">akz</span>годного кр<span style="display:none;">xvi</span>едита он<span style="display:none;">yzz</span>лайн на ка<span style="display:none;">ikk</span>рту без от<span style="display:none;">ldp</span>каза ➥ без сп<span style="display:none;">qpi</span>равок и пр<span style="display:none;">vcu</span>оверок от 0% ст<span style="display:none;">jtk</span>авка. мо<span style="display:none;">fku</span>ментальная выдача</p></div>
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1306&amp;affid=20278&amp;subid=ask2')"><span>Реклама</span>www.e-groshi.ua</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1306&amp;affid=20278&amp;subid=ask2')" class="main-link">Кредит На Ка<span style="display:none;">cxs</span>рту без Сп<span style="display:none;">vjk</span>равок - До 15 000 грн.</a>
+                        <p><b>Кредит на карту</b> - пр<span style="display:none;">ykq</span>осто, бы<span style="display:none;">zvo</span>стро и уд<span style="display:none;">aav</span>обно. Вы<span style="display:none;">pao</span>годные ус<span style="display:none;">joh</span>ловия. Уд<span style="display:none;">rjc</span>обно по<span style="display:none;">ttx</span>гашать. Пе<span style="display:none;">hfc</span>рвый за<span style="display:none;">ztf</span>йм - бе<span style="display:none;">atc</span>сплатно. Бе<span style="display:none;">wfy</span>зопасно. Бы<span style="display:none;">qxk</span>страя вы<span style="display:none;">zex</span>дача. Без сп<span style="display:none;">qpi</span>равок о до<span style="display:none;">qiy</span>ходах, Без поручителей.</p>
+								<div class="quick-links">
+									<ul><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1306&amp;affid=20278&amp;subid=ask2')"><li>Как оф<span style="display:none;">uoq</span>ормить кредит<hr></li></a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1306&amp;affid=20278&amp;subid=ask2')"><li>Ставка 0.01%<hr></li></a>	</ul>
+								</div></div>
+					 <div class="search-item">
+                        <a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1175&amp;affid=20278&amp;subid=ask2')"><span>Реклама</span>www.ccloan.ua/онлайн_кредит/</a><a href="https://minizaim.com.ua/v/10gdv?subid=g1" onclick="window.open('https://tds.pdl-profit.com/?offerid=1175&amp;affid=20278&amp;subid=ask2')" class="main-link">Лучший О% кр<span style="display:none;">gdk</span>едит на ка<span style="display:none;">ikk</span>рту Nо<span style="display:none;">afk</span>.1 - 50<span style="display:none;">vwh</span>00+ грн од<span style="display:none;">qaz</span>обряем за 5 мин</a>
+                        <p><b>Кредит онлайн</b>. Кр<span style="display:none;">vgl</span>углосуточно. Од<span style="display:none;">ilk</span>обряем ср<span style="display:none;">pxf</span>азу. С лю<span style="display:none;">oak</span>бой кр<span style="display:none;">fqc</span>едитной ис<span style="display:none;">pfy</span>торией. Ус<span style="display:none;">jgy</span>пей на ак<span style="display:none;">ekl</span>цию. По<span style="display:none;">elu</span>лучи от Cc<span style="display:none;">xsi</span>loan <b>Кредит</b> под 0.<span style="display:none;">oui</span>01% без сп<span style="display:none;">qpi</span>равок и по<span style="display:none;">glf</span>ручителей за 10 минут</p></div>
+					 <div class="search-item"></div>
+                
+                <div class="search-pagination">
+                    <img src="1_files/foot_google-min.png" class="foot-google" alt="">
+                    <ul>
+                        <a href="/index.html" class="active"><li>1</li></a>
+                        <a href="/index.html"><li>2</li></a>
+                        <a href="/index.html"><li>3</li></a>
+                        <a href="/index.html"><li>4</li></a>
+                        <a href="/index.html"><li>5</li></a>
+                        <a href="/index.html"><li>6</li></a>
+                        <a href="/index.html"><li>7</li></a>
+                        <a href="/index.html"><li>8</li></a>
+                        <a href="/index.html"><li>9</li></a>
+                        <a href="/index.html"><li>10</li></a>
+                        <a href="/index.html"><li>Следующая</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div></main>
+        <footer id="footer">
+            <div class="container">
+                <ul>
+                    <a href="/index.html"><li>Справка</li></a>
+                    <a href="/index.html"><li>Оставить отзыв</li></a>
+                    <a href="/index.html"><li>Конфиденциальность</li></a>
+                    <a href="/index.html"><li>Условия</li></a>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+</body></html>
